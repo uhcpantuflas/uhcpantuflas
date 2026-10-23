@@ -1,6 +1,6 @@
 name: uhc-pantuflas
 version: '${project.version}'
-main: com.github.gorkiiuss.uhcpantuflas.UHCPantuflas
+main: com.github.uhcpantuflas.uhcpantuflas.UHCPantuflas
 api-version: '1.20'
 depend: [Chunky, WorldEdit]
 

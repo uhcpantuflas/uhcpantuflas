@@ -4,19 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.gorkiiuss</groupId>
+    <groupId>com.github.uhcpantuflas</groupId>
     <artifactId>uhc-pantuflas</artifactId>
-    <version>0.0.0-INITIAL</version>
+    <version>0.1.0-ALPHA</version>
     <packaging>jar</packaging>
 
     <name>UHC Pantuflas</name>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
+        <finalName>uhcpantuflas-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -70,6 +71,10 @@
             <id>enginehub-maven</id>
             <url>https://maven.enginehub.org/repo/</url>
         </repository>
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -93,10 +98,9 @@
         </dependency>
         <dependency>
             <groupId>org.popcraft</groupId>
-            <artifactId>chunky</artifactId>
+            <artifactId>chunky-common</artifactId>
             <version>1.3.92</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/Chunky-1.3.92.jar</systemPath>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
